@@ -1,0 +1,68 @@
+.image-annotator-popup {
+    position: fixed;
+    // 设置该部分在最中间
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  
+    .title {
+      margin-left: 4px;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2pt;
+    }
+    .image-place {
+      max-height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ocr {
+      display: flex;
+      align-items: center;
+  
+      .ocr-title {
+        margin-top: 4px;
+        margin-left: 4px;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1pt;
+      }
+  
+      .ocr-input {
+        margin-left: 10px;
+        margin-top: 4px;
+        width: 60%;
+        border: 1px #000 solid;
+      }
+    }
+  
+    .button-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  
+      .button-annotator {
+        display: flex;
+        background-color: #dceef8;
+        color: #131007;
+        font-weight: bold;
+        text-align: center;
+        height: 30px;
+        width: 60px;
+        font-size: 14px;
+        border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center; /* 将按钮中的内容在主轴方向上居中对齐 */
+      }
+    }
+  }

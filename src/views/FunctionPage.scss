@@ -1,0 +1,84 @@
+#nav-title {
+  font-size: 18px;
+}
+
+// �?信度阈�?
+.placeholder-style::-webkit-input-placeholder {
+  color: #fff; /* 设置 placeholder 的�?�色 */
+}
+
+.placeholder-style::-moz-placeholder {
+  color: #fff;
+}
+
+.placeholder-style:-ms-input-placeholder {
+  color: #fff;
+}
+
+.placeholder-style:-moz-placeholder {
+  color: #fff;
+}
+
+#modify-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 100vw;
+  height: 470px;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .image-place {
+    width: calc(100vw * 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-y: auto; /* 使用滚动�? */
+    overflow-x: hidden;
+    text-align: center; /* 内部内�?�水平居�? */
+    justify-content: center;
+    border-right: 2px dashed #ccc;
+    position: relative;
+    
+    .upload-component {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .image {
+      margin-top: 5px;
+    }
+
+  }
+
+  .ocr-place {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: calc(100vw * 0.4 - 16px);
+    height: 90%;
+    position: relative;
+
+  }
+  // .side-sheet {
+  //   .modify-place {
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   }
+  // }
+  
+
+}
+
+
+
+
+
